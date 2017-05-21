@@ -8,18 +8,28 @@
   var mapWidth=1000;
   var mapHeight=1000;
 
-  document.write(
+  if (!isTop) document.write(
 		'<div class="content" style="width:'+(w)+'px;height:'+(h-0)+'px;">'+
-		'<div class="contentInner" style="width:'+mapWidth+'px;height:'+mapWidth+'px"><img src="./images/map1.jpg" style="width:'+mapWidth+'px;height:'+mapWidth+'px">'
+			(lang == 'ja' ?
+		    '<div class="contentInner" style="width:'+mapWidth+'px;height:'+mapWidth+'px"><img src="./images/map1.jpg" style="width:'+mapWidth+'px;height:'+mapWidth+'px">'
+        :
+		    '<div class="contentInner" style="width:'+mapWidth+'px;height:'+mapWidth+'px"><img src="./images/map1_e.jpg" style="width:'+mapWidth+'px;height:'+mapWidth+'px">'
+      )+
+      '</div></div>'
 	);
   document.write(
-		'</div></div>'+
-			(lang == 'ja' ?
-      '<header><span class="city"><span>▼&nbsp;</span>南三陸町</span><a href="./index_e.html" class="lang">EN</a></header>' :
-      '<header><span class="city"><span>▼&nbsp;</span>Minami-Sanriku</span><a href="./" class="lang">日本語</a></header>' )+
+			(
+      isTop ?
+      '<header><a href="./minamisanriku_e_e.html" class="lang">EN</a></header>'
+      :
+      lang == 'ja' ?
+      '<header><a href="./" class="to_top"></a><span class="city"><span>▼&nbsp;</span>南三陸町</span><a href="./minamisanriku_e.html" class="lang">EN</a></header>'
+      :
+      '<header><a href="./" class="to_top"></a><span class="city"><span>▼&nbsp;</span>Minami-Sanriku</span><a href="./minamisanriku.html" class="lang">日本語</a></header>'
+      )
+	);
 
-
-
+  if (!isTop) document.write(
 			'<div class="plus"></div>'+
 			'<div class="pre"><span>20110312</span></div>'+
 			'<div class="after"><span>20170414</span></div>'+
@@ -31,6 +41,7 @@
 
 
   $(window).load(function(){
+    if (isTop) return;
     $('.carousel,.carousel .viewport,.carousel a,.carousel .item')
       .css({width:w+'px'});
 

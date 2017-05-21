@@ -24,6 +24,17 @@ header{
 	background-size:50%;
 }
 
+header .to_top{
+	display:block;
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:200px;
+	height:40px;
+}
+
+
+
 header .lang{
 	font-size:84%;
 	position:fixed;
@@ -35,6 +46,8 @@ header .lang{
 	text-align:center;
 	border-radius:10px;
 }
+
+
 
 header .city{
 	font-size:14px;
@@ -74,6 +87,7 @@ header .lang:visited{
 	width: 375px;
 	height: 90px;
 
+	border-bottom: solid 5px #00bb66;
 	overflow: hidden;
 	/*
 	margin: 0 auto;
