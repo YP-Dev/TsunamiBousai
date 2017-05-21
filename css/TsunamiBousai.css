@@ -1,0 +1,264 @@
+html,body{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+
+header{
+	position:fixed;
+	width:100%;
+	height:32px;
+	top:0;
+	left:0;
+	background: #00bb66 url(../images/logo.png) no-repeat left bottom;
+	background-size:50%;
+	z-index:1000;
+	border-bottom:solid 2px #fff;
+}
+
+.en header{
+	background: #00bb66 url(../images/logo_e.png) no-repeat left bottom;
+	background-size:50%;
+}
+
+header .to_top{
+	display:block;
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:200px;
+	height:40px;
+}
+
+
+
+header .lang{
+	font-size:84%;
+	position:fixed;
+	padding:3px 10px 1px;
+	line-height:1;
+	top:7px;
+	right:10px;
+	border:solid 1px #fff;
+	text-align:center;
+	border-radius:10px;
+}
+
+
+
+header .city{
+	font-size:14px;
+	position:fixed;
+	padding:3px 10px 1px;
+	line-height:1;
+	top:7px;
+	right:50px;
+	text-align:right;
+	color:#fff;
+}
+
+.en header .city{
+	right:70px;
+	font-size:12px;
+}
+
+header .city span{
+	font-size:9px;
+}
+
+
+header .lang:link,
+header .lang:visited{
+	color:#fff;
+	text-decoration:none;
+}
+
+
+
+
+.carousel{
+	position: fixed;
+	z-index: 10000;
+	left: 0;
+	top: 33px;
+	width: 375px;
+	height: 90px;
+
+	border-bottom: solid 5px #00bb66;
+	overflow: hidden;
+	/*
+	margin: 0 auto;
+	padding: 0 0;
+	*/
+}
+
+.carousel .viewport{
+	width: 375px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.carousel a{
+	width: 375px;
+	display:block;
+}
+
+.carousel a:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.carousel .photo{
+	width:100px;
+	height:auto;
+	float:left;
+	margin-left:10px;
+}
+
+
+.carousel figcaption{
+	color:#000;
+	width:250px;
+	font-size:14px;
+	float:right;
+	margin-right:10px;
+	font-weight:bold;
+}
+
+.carousel figcaption{
+	color:#000;
+	width:245px;
+	font-size:14px;
+	float:right;
+	margin-right:10px;
+	font-weight:bold;
+	text-align:left;
+}
+
+.carousel p{
+	color:#000;
+	width:245px;
+	font-size:12px;
+	float:right;
+	line-height:1.5;
+	margin-top:2px;
+	margin-bottom:0;
+	margin-right:10px;
+	font-weight:normal;
+	text-align:left;
+}
+
+.carousel .update{
+	color:#aaa;
+	width:245px;
+	font-size:9px;
+	float:right;
+	line-height:1.2;
+	margin-top:2px;
+	margin-bottom:-5px;
+	margin-right:10px;
+	font-weight:normal;
+	text-align:right;
+}
+
+
+
+.carousel .flipsnap{
+	width:1125px;
+}
+
+.flipsnap:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+
+.carousel .item{
+
+
+	width: 375px;
+	    margin: 0 0;
+	    font-size: 14px;
+	    text-align: center;
+	    padding: 10px 0;
+	    background: #ffffff/*#00bb66*/;
+	    /*border: 1px solid #fff;*/
+	    float: left;
+	    color: #fff;
+
+}
+
+
+.pre,
+.after{
+	position:fixed;
+	width:120px;
+	height:120px;
+	border:solid 3px #fff;
+	border-radius:60px;
+	bottom:30px;
+	left:50%;
+	z-index:1000;
+}
+
+.pre span,
+.after span{
+	position:absolute;
+	font-size:84%;
+	width:120px;
+	bottom:10px;
+	display:block;
+	text-align:center;
+	font-weight:bold;
+	color:#fff;
+	text-shadow:1px 1px 3px rgba(0,0,3,0.5);
+}
+
+.pre{
+	margin-left:-130px;
+	background: #999 url(../images/minamisanriku110318.jpg) no-repeat -190px -190px;
+	background-size:500px;
+}
+
+.after{
+	margin-left:10px;
+	background: #999 url(../images/minamisanriku170414.jpg) no-repeat -190px -190px;
+	background-size:500px;
+}
+
+.arw{
+	position:fixed;
+	width:48px;
+	height:auto;
+	bottom:76px;
+	left:50%;
+	z-index:1100;
+
+	margin-left:-14px;
+
+}
+
+.plus{
+	width:70px;
+	height:70px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	background: url(../images/plus.png) no-repeat 0 0;
+	background-size:70px;
+	margin-top:-35px;
+	margin-left:-35px;
+}
+
+.mCSB_container_wrapper{
+	margin-right:0px!important;
+	margin-bottom:0px!important;
+
+}
