@@ -14,12 +14,7 @@
 	);
   document.write(
 		'</div></div>'+
-			(lang == 'ja' ?
-      '<header><span class="city"><span>▼&nbsp;</span>南三陸町</span><a href="./index_e.html" class="lang">EN</a></header>' :
-      '<header><span class="city"><span>▼&nbsp;</span>Minami-Sanriku</span><a href="./" class="lang">日本語</a></header>' )+
-
-
-
+			'<header><span class="city"><span>▼&nbsp;</span>Minami-Sanriku</span><a href="index_en.html" class="lang">日本語</a></header>'+
 			'<div class="plus"></div>'+
 			'<div class="pre"><span>20110312</span></div>'+
 			'<div class="after"><span>20170414</span></div>'+
